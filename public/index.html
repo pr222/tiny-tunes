@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  <title>Tiny Tunes</title>
+  <script type="module" src="js/index.js"></script>
+  <template id="step07-template">
+    <li class="listitem"><a href="#" class="red greybox"></a></li>
+  </template>
+</head>
+
+<body>
+  <div>
+    <h2>Good reading...</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode">https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild">https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore">https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore</a></li>
+    </ul>
+</div>
+
+<div id="step01">
+    <h2>Exercise 1</h2>
+    <p>
+        Write some javascript code that creates a text node containing the
+        text "Hello World!" and put this node into the p-element with
+        id="step01_hello" (p#step01_hello)
+    </p>
+    <p id="step01_hello"></p>
+</div>
+<hr />
+
+<div id="step02">
+    <h2>Exercise 2</h2>
+    <p>
+        Create a h3-elemenet containing the text "This is a sub headline" and put it
+        after the p-elemenet containing this text.
+    </p>
+    <p>
+        But before this p-element.
+    </p>
+</div>
+<hr />
+
+<div id="step03">
+    <h2>Exercise 3</h2>
+    <p>
+        Create a h3-element containing the text "This is a sub headline" and put it
+        after the forth h2-element (having the text "Exercise 3") in the document.
+    </p>
+</div>
+<hr />
+
+<div id="step04">
+    <h2>Exercise 4 - Style</h2>
+    <p>
+        Change the color to "red" on the h2-element above (containing the text "Excercise 4 - Style")
+    </p>
+</div>
+<hr />
+
+<div id="step05">
+    <h2>Exercise 5 - Images</h2>
+    <p>
+        Create image elements and set it's source to the images (autumn.jpeg and pumpkin.jpeg) in the images-folder. Do not forget the alt-text.
+
+        Place the images in the div below with class "images".
+    </p>
+    <div class="images"></div>
+</div>
+<hr />
+
+<div id="step06">
+    <h2>Exercise 6 - Document Fragment</h2>
+    <p>
+        Use a DocumentFragment to create 10 li-element and add it to ul#list06
+    </p>
+    <p>PS. Checkout the <a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment">documentation for DocumentFragment on MDN</a>. </p>
+    <ul id="list06"></ul>
+</div>
+<hr />
+
+<div id="step07">
+    <h2>Exercise 7 - Template</h2>
+    <p>
+        Use the template (provided in the document &lt;head&gt; section) to create 5 li-elements with links to pages of your choise. Add the li-elements to the ul#list07. (It could be the same link in every li-element)
+    </p>
+    <ul id="list07"></ul>
+</div>
+<hr />
+
+<div id="step08">
+    <h2>Exercise 8 - Tiny Tune</h2>
+    <p>
+        Now it is time to add your first web component to the page. In this project a web component named "tiny-tune" placed. 
+        Your task is to add that web-component inside the div#step08. The component is finished so you should not modify the code inside the component. 
+        You are free to add the component in any way you like and multiple times. (Using HTML-notation or using the DOM-api)
+    </p>
+</div>
+<hr />
+
+<div id="step09">
+    <h2>Exercise 9 - The Time</h2>
+    <p>
+        Now it is time to create your first Web Component. The "the-time"-component. It is a simple one.:
+        <ul>
+            <li>It should be named the-time</li>
+            <li>It should display the the time in hours, minutes and seconds (hh:mm:ss) when the component was added to the DOM.</li>
+            <li>The component should embed a time-element.</li>
+            <li>Add the component last in div#step09</li>
+        </ul>
+
+        <p>
+            <img src="images/time.png" alt="Example view of the component" />
+        </p>
+
+        Recommended reading:
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date">The Date-object</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/time">Time-element</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toISOString">toISOString</a></li>
+        </ul>
+    </p>
+</div>
+
+</body>
+
+</html>
