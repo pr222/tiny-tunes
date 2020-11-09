@@ -55,14 +55,13 @@ images.appendChild(pumpkin)
 
 // Exercise 6
 const list = document.querySelector('ul#list06')
-const listItems = []
+// const listItems = []
 const fragment = new DocumentFragment()
-console.log('1')
 
 for (let i = 0; i < 10; i++) {
-  console.log('2')
   const li = document.createElement('li')
-  listItems.push(li)
+  // listItems.push(i)
+  li.textContent = `List item: ${i + 1}`
   fragment.appendChild(li)
 }
 
