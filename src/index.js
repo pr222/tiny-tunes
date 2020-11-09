@@ -10,7 +10,7 @@
 // TODO: Write your code here!
 // Exercise 1
 // const exercise1 = () => {
-const hello = document.getElementById('step01_hello')
+const hello = document.querySelector('#step01_hello')
 
 hello.textContent = 'Hello world!'
 // }
@@ -36,8 +36,24 @@ step03.insertBefore(headline, step03.lastElementChild)
 // Exercise 4
 const styledHeader = document.querySelectorAll('h2')[4]
 styledHeader.style.color = 'red'
+// document.querySelector('#step04 h2').classList.add('red')
+styledHeader.setAttribute('class', 'red')
 
 // Exercise 5
+const autumn = document.createElement('img')
+autumn.setAttribute('src', 'images/autumn.jpeg')
+autumn.setAttribute('alt', 'Autumn picture')
+
+const pumpkin = document.createElement('img')
+pumpkin.setAttribute('src', 'images/pumpkin.jpeg')
+pumpkin.setAttribute('alt', 'Pumpkin picture')
+
+const images = document.querySelector('.images')
+
+images.appendChild(autumn)
+images.appendChild(pumpkin)
+
+// Exercise 6
 const list = document.querySelector('ul#list06')
 const listItems = []
 const fragment = new DocumentFragment()
