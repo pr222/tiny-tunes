@@ -36,3 +36,18 @@ step03.insertBefore(headline, step03.lastElementChild)
 // Exercise 4
 const styledHeader = document.querySelectorAll('h2')[4]
 styledHeader.style.color = 'red'
+
+// Exercise 5
+const list = document.querySelector('ul#list06')
+const listItems = []
+const fragment = new DocumentFragment()
+console.log('1')
+
+for (let i = 0; i < 10; i++) {
+  console.log('2')
+  const li = document.createElement('li')
+  listItems.push(li)
+  fragment.appendChild(li)
+}
+
+list.appendChild(fragment)
