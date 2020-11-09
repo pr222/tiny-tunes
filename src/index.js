@@ -21,7 +21,6 @@ const aSub = document.createElement('h3')
 aSub.textContent = 'This is a sub headline'
 
 const step2 = document.querySelector('#step02')
-
 // step2.appendChild(aSub)
 step2.insertBefore(aSub, step2.lastElementChild)
 
@@ -33,3 +32,7 @@ const headline = document.createElement('h3')
 headline.appendChild(textNode)
 
 step03.insertBefore(headline, step03.lastElementChild)
+
+// Exercise 4
+const styledHeader = document.querySelectorAll('h2')[4]
+styledHeader.style.color = 'red'
