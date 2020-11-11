@@ -6,6 +6,9 @@
  * @author Pauliina Raitaniemi <pr222ja@student.lnu.se>
  * @version 1.0.0
  */
+import './components/tiny-tune'
+import './components/the-time'
+
 // Exercise 1
 const exercise1 = () => {
   const hello = document.querySelector('#step01_hello')
@@ -88,8 +91,14 @@ const exercise7 = () => {
   }
 }
 
-const exercise8 = () => {}
-const exercise9 = () => {}
+const exercise8 = () => {
+  const tuny = document.createElement('tiny-tune')
+  document.querySelector('#step08').appendChild(tuny)
+}
+const exercise9 = () => {
+  const time = document.createElement('the-time')
+  document.querySelector('#step09').appendChild(time)
+}
 
 exercise1()
 exercise2()
